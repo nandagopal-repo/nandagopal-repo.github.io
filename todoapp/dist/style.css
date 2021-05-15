@@ -48,9 +48,9 @@ body {
 .todo-container {
   border: 2px solid black;
   border-radius: 20px;
-  min-width: 30vw;
-  min-height: 30vh;
-  margin: 30px;
+  min-width: 30%;
+  height: auto;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,8 +69,7 @@ body {
 
 .delete-container {
   width: 100%;
-  height: 60%;
-  padding: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,18 +80,46 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: var(--comcolor);
   border-bottom: 2px solid black;
   border-radius: 18px 18px 0px 0px;
 }
 
+.clear-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (min-width: 500px) {
+  .clear-container {
+    padding: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .clear {
-  margin: 20px;
+  margin: 5px;
   border: 1px solid transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 20px;
   padding: 5px 10px;
   color: white;
@@ -109,7 +136,7 @@ body {
   cursor: pointer;
 }
 
-.delete {
+.ham-burger {
   width: 40px;
   height: 35px;
   position: relative;
@@ -120,7 +147,7 @@ body {
   cursor: pointer;
 }
 
-.delete span {
+.ham-burger span {
   display: block;
   position: absolute;
   height: 4px;
@@ -135,29 +162,29 @@ body {
   transition: .25s ease-in-out;
 }
 
-.delete span:nth-child(1) {
+.ham-burger span:nth-child(1) {
   top: 0px;
 }
 
-.delete span:nth-child(2) {
+.ham-burger span:nth-child(2) {
   top: 18px;
 }
 
-.delete span:nth-child(3) {
+.ham-burger span:nth-child(3) {
   top: 36px;
 }
 
-.delete.open span:nth-child(1) {
+.ham-burger.open span:nth-child(1) {
   top: 18px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-.delete.open span:nth-child(2) {
+.ham-burger.open span:nth-child(2) {
   opacity: 0;
 }
 
-.delete.open span:nth-child(3) {
+.ham-burger.open span:nth-child(3) {
   top: 18px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
@@ -202,7 +229,7 @@ body {
   width: 70%;
   padding: 5px 15px;
   border: 1px solid black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +264,7 @@ body {
   border: 2px solid black;
   border-radius: 20px;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +375,7 @@ input[type="checkbox"]:checked + .custom-check {
 
 label {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 10px;
   position: relative;
 }
