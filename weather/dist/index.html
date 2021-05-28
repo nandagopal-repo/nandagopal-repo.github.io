@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">check weather</h1>
+    <p class="para">The data shown below is from <strong><a href="https://www.weatherapi.com" target="_blank" >WeatherAPI.com</a></strong> api.</p>
+
+    <div class="controls">
+        <input class="inputfield" type="text" id="inputvalue" placeholder="city" >
+        <button class="btn" id="searchbtn">search</button>
+    </div>
+    <div class="loading" id="loader"></div>
+
+    <div class="container" id="container"></div >
+    <p class="para" id="error"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
