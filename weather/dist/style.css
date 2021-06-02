@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 :root {
   --Cornflower:#4C5270;
-  --Cyan:#36EEE0;
+  --rose: #D8A7B1;
   --TiffanyBlue: #BCECE0;
 }
 
@@ -40,7 +40,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--Cyan);
+  background-color: var(--rose);
 }
 
 .heading {

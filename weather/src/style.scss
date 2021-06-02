@@ -2,7 +2,7 @@
 
 :root {
     --Cornflower:#4C5270;
-    --Cyan:#36EEE0;
+    --rose: #D8A7B1;
     --TiffanyBlue: #BCECE0;
 }
 
@@ -31,7 +31,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--Cyan);
+    background-color: var(--rose);
 }
 
 .heading{
