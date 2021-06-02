@@ -28,13 +28,13 @@ btn.addEventListener('click',()=>{
     const city = input.value;
     const key = 'b131a60bab8b41fdb6095949212705';
     const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
-    showWeather(url);
+    showWeather(url,city);
     input.value = ''; //clear previous input value
     errorText.innerText = '';
 });
 
 
-async function showWeather(url){
+async function showWeather(url,city){
     loader.style.display = "block";
     loader.style.animation = "1s rotation linear infinite";
     await fetch(url,{
@@ -49,7 +49,9 @@ async function showWeather(url){
             container.style.display = "block";
         })
         .catch(error => {
-            errorText.innerText = error;
+            container.style.display = 'none';
+            console.log(error);
+            errorText.innerText = `${city} not found!`;
         });
     loader.style.display = "none";
     loader.style.animation = "1s rotation linear";
