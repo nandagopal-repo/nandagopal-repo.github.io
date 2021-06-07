@@ -1,0 +1,130 @@
+@import 'global';
+@import 'variables';
+
+
+body{
+   width: 100%;
+   padding: 2vw 5vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.logo{
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+.search-field{
+    font-size: 1rem;
+    padding: .3rem;
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.search-btn{
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .3rem .5rem;
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.credits{
+    margin: 1rem 0rem;
+    font-size: .8rem;
+}
+
+.loading{
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top: 5px solid gray;
+    background-color: transparent;
+    display: none;
+}
+
+@keyframes rotation{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.error-msg{
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: none;
+}
+
+.section-container{
+    border: 2px solid black;
+    border-radius: .3rem;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    visibility: hidden;
+}
+
+.show-heading{
+    font-size: 2rem;
+    font-size: 500;
+    margin: 1rem;
+}
+
+.show-img{
+    margin: 1rem;
+    border-radius: .3rem;
+}
+
+.show-summary{
+    margin: 1rem;
+    font-weight: 300;
+}
+
+.show-info-container{
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(248, 245, 245);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.801);
+
+    .show-info-heading{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+
+    .show-info-values{
+        margin: .3rem;
+        font-weight: 300;
+    }
+
+    .show-info-tags{
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+
+    .site-link{
+        word-break: break-all;
+    }
+}
+
+@import 'mediaquery';
