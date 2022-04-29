@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cal-container{
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cal-display{
+    width: 100%;
+    height: 20%;
+    
+    /* border: 1px solid red; */
+}
+
+.cal-display p{
+    width: 100%;
+    height: 100%;
+    background-color: #f5e0cd;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    padding-right: 40px;
+
+}
+
+.but-container{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.but-container button{
+    border: none;
+    margin: 2px;
+}
+
+.orange{
+    color: orange;
+}
+
+.but-container .special{
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+    font-weight: 800;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 0px;
+}
